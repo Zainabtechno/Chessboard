@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ddd;
+}
+
+.chessboard{
+    width: 640px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 4px solid #999;
+}
+
+/* FIXED SQUARE BOXES */
+.chessboard div{
+    aspect-ratio: 1 / 1;   /* 👈 makes perfect square */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+}
+
+/* Light Squares */
+.light{
+    background-color: #4b042a;
+}
+
+/* Dark Squares */
+.dark{
+    background-color: #fffafa;
+    color: black;
+}
